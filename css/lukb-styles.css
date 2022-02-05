@@ -1,0 +1,211 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size:62.5% ;
+    font-family: 'Comfortaa', cursive;
+   background-image: linear-gradient(to bottom, #6316b1, #6e39bf, #7a54cb, #876cd7, #9684e1);
+}
+
+
+
+  header {
+      height: 40px;
+      max-width: 950px;
+      padding: 0 80px;
+      margin: 10px 10px 50px 10px;
+      font-size: 2em;
+      color: whitesmoke;
+      display: grid;
+      grid-gap: 50px;
+      grid-template-columns: repeat(5, 400px);
+      grid-template-areas: 
+      "logo  bttn  insta"
+      ;
+  }
+
+  
+
+  .logo {
+      grid-area: logo;
+      display: flex;
+      align-items: center;
+  }
+  .center-bttns {
+      grid-area:  bttn ;
+      max-width: inherit;
+      font-size: 0.8em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;          
+  }
+
+  .center-bttns button{
+      height: 50px;
+      width: 70px;
+      background-color: inherit;
+      border: none;
+      font-size: 1.2em;
+      color: whitesmoke ;
+  }
+ 
+
+ .lua {
+     grid-area: luk1;
+ }
+ .lub{
+     grid-area: luk2;
+ }
+ .luc {
+     grid-area: luk3;
+ }
+
+ 
+
+  .last-bttn {
+      grid-area: insta;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      color: whitesmoke;
+  }
+  
+  .tittle-container {
+      margin: 70px 70px 0 70px;
+      height: 80px;
+      width: 950;
+      margin-top: 50px;
+      font-size:2.5em ;
+      color: whitesmoke;
+      display: grid;
+      grid-template-columns: repeat(3, 600px);
+      grid-template-areas: 
+      ". tittle .";
+  }
+
+  .tittle {
+      grid-area: tittle;
+  }
+
+
+ .main-container {
+     margin: 2% 0% 2% 30%;
+     
+     width: 950px;
+     height: 540px;
+     position: relative;
+ }
+
+  .main-container img {
+       max-width: 30%;
+       height: 70%;
+  }
+
+  .img-1 {
+      position: absolute;
+      
+      top: 10px;
+      left:320px
+  }
+
+   .img-2 {
+      position: absolute;
+      left: 60px;
+      top: 50px;
+  }
+   .img-3 {
+      position: absolute;
+      left:300px;
+      top: 250px;
+  }
+
+  .comparisson-section {
+      width: 1470px;
+      height: 450px;
+      display: flex;
+      justify-content: center;
+      
+  }
+
+  .board {
+      width: 800px;
+      height: 420px;
+      background-color: rgb(198, 145, 233);
+      border-radius: 20px;
+      padding: 30px 110px;
+      border-style: solid;
+      border-color: rgb(231, 66, 231);
+      display: grid;
+      grid-template-columns: repeat(2, 300px);
+      grid-template-areas: 
+      "img txt"
+      ;
+  }
+
+  .img-board {
+      width: 300px;
+      height: 350px;
+      background-color: rgb(107, 23, 23);
+      border-right: seashell;
+      border-right-style: solid;
+  }
+
+  .txt-board {
+      width: 300px;
+      height: 350px;
+      background-color: rgb(138, 108, 108);
+ 
+  }
+
+footer {
+      width: inherit;
+      height: 120px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: indigo;
+     
+  }
+
+  .contact--chart{
+      height: 100px;
+      width: 600px;
+     
+      display: grid;
+      grid-template-columns: repeat(2, 200px);
+      grid-template-rows:repeat(3, 30px) ;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      grid-template-areas: 
+      "jufi instajufi"
+      "ivi instaivi"
+      "mili instamili"
+      ;
+  }
+  .contact--chart p {
+      display: flex;
+      justify-self: center;
+    
+  }
+.jufi {
+    grid-area: jufi;
+}
+
+.ivi {
+    grid-area: ivi;
+
+}
+
+.mili {
+    grid-area: mili;
+}
+
+.contact--chart p a  {
+    text-decoration: none;
+    color: lightcyan;
+}
